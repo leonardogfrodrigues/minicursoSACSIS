@@ -13,8 +13,7 @@ def buscar_Alunos():
             count=len(database.all())
             ).dict()
     )
-# return jsonify(database.all())
-
+    
 @app.post("/inserir-alunos") #Estabelecendo a rota do servidor com o metodo POST
 @spec.validate(body=Request(Aluno), resp=Response(HTTP_200=Aluno))
 def inserir_Alunos():

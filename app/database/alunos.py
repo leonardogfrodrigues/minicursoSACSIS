@@ -1,6 +1,4 @@
-from flask import Flask
 from pydantic import BaseModel
-
 from main import database
 
 class Aluno(BaseModel):
